@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/keeeper85/Gaminatorium-frontend/compare/v0.0.3...v0.0.4) (2024-06-12)
+
+
+### Features
+
+* add reset css ([f5fa4c1](https://github.com/keeeper85/Gaminatorium-frontend/commit/f5fa4c134605e693f63ae226159011e6cf426656))
+
 ### [0.0.3](https://github.com/keeeper85/Gaminatorium-frontend/compare/v0.0.2...v0.0.3) (2024-06-09)
 
 
