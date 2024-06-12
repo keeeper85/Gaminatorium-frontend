@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/keeeper85/Gaminatorium-frontend/compare/v0.0.4...v0.0.5) (2024-06-12)
+
+
+### Features
+
+* add navbar with login status in context ([b8cd00f](https://github.com/keeeper85/Gaminatorium-frontend/commit/b8cd00fe588780146ea9e132db30b8da8b0b09b8))
+
 ### [0.0.4](https://github.com/keeeper85/Gaminatorium-frontend/compare/v0.0.3...v0.0.4) (2024-06-12)
 
 
