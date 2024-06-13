@@ -1,11 +1,11 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 
 type AuthStateType = {
   isLogged: boolean
   toggleLogin: () => void
 }
 
-const AuthContext = createContext<AuthStateType | undefined>(undefined);
+export const AuthContext = createContext<AuthStateType | undefined>(undefined);
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [isLogged, setIsLogged] = useState<boolean>(false)
@@ -25,12 +25,3 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     </AuthContext.Provider>
   )
 }
-
-export const useAuth = () => {
-  const context = useContext(AuthContext);
-  if (!context) {
-    throw new Error("useAuth must be used within an AuthProvider");
-  }
-  return context;
-}
-
