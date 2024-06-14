@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import Layout from "./layout/Layout"
+import Layout from "./core/layout/Layout"
 
 function App()  {
   return (
