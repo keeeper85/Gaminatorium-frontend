@@ -1,5 +1,6 @@
-import Navbar from "../components/Navbar/Navbar";
-import { AuthProvider } from "../contexts/Authcontext";
+import {AuthProvider} from "../../contexts/Authcontext.tsx";
+import Navbar from "../../components/Navbar/Navbar.tsx";
+
 
 interface LayoutProps {
   children: JSX.Element[] | JSX.Element
