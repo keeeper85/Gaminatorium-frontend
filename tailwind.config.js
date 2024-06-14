@@ -14,6 +14,7 @@ export default {
     fontFamily: {
       sans: ['Urbanist', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
+      irish: ['"Irish Grover"', 'serif'],
     },
   extend: {
       colors: {
