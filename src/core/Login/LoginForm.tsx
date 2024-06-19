@@ -28,7 +28,7 @@ function LoginForm() {
             <Paper
                 component="form"
                 sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', borderRadius: '25px' }}
-                className="w-4/5 md:w-80"
+                className="w-full md:w-80"
             >
                 <InputBase
                     sx={{ ml: 1, flex: 1 }}
@@ -42,7 +42,7 @@ function LoginForm() {
             <Paper
                 component="form"
                 sx={{ p: '2px 4px', display: 'flex', alignItems: 'center',  borderRadius: '25px' }}
-                className="w-4/5 md:w-80"
+                className="w-full md:w-80"
             >
                 <InputBase
                     sx={{ ml: 1, flex: 1 }}
@@ -52,10 +52,14 @@ function LoginForm() {
                     onChange={e => setPassword(e.target.value)}
                 />
             </Paper>
-            <span className="m-2 self-start text-xs font-inknut text-red">password is empty!</span>
-            <span className="m-2 self-start text-xs font-inknut text-red">Invalid email or password</span>
+            <div className="m-2 text-xs font-inknut flex space-x-6">
+            <span className=" text-red">password is empty!</span>
+            <span >Forgot your password?</span>
+
+            </div>
+            <span className="m-2 text-xs font-inknut text-red">Invalid email or password</span>
             <span className="mt-4 mb-2 mx-2 self-start text-xs font-inknut">You don't have account? Register here!</span>
-            <Button type="submit" variant="contained" sx={{ mt: 2 }} >
+            <Button type="submit" variant="contained" sx={{m:2}} className="w-full font-inknut" >
                 Login
             </Button>
         </Box>
