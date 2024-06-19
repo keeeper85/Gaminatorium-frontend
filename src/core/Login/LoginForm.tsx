@@ -24,34 +24,38 @@ function LoginForm() {
             autoComplete="off"
             onSubmit={handleSubmit}
         >
+            <span className="m-4 self-start text-base font-inknut">email</span>
             <Paper
                 component="form"
-                sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400 }}
-                style={{borderRadius: '25px'}}
+                sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', borderRadius: '25px' }}
+                className="w-4/5 md:w-80"
             >
                 <InputBase
                     sx={{ ml: 1, flex: 1 }}
-                    placeholder="Username"
                     inputProps={{ 'aria-label': 'enter your username' }}
                     value={username}
                     onChange={e => setUsername(e.target.value)}
                 />
             </Paper>
+            <span className="m-2 self-start text-xs font-inknut text-red">email is empty!</span>
+            <span className="m-2 self-start text-base font-inknut">password</span>
             <Paper
                 component="form"
-                sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400, mt: 2 }}
-                style={{borderRadius: '25px'}}
+                sx={{ p: '2px 4px', display: 'flex', alignItems: 'center',  borderRadius: '25px' }}
+                className="w-4/5 md:w-80"
             >
                 <InputBase
                     sx={{ ml: 1, flex: 1 }}
                     type="password"
-                    placeholder="Password"
                     inputProps={{ 'aria-label': 'enter your password' }}
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                 />
             </Paper>
-            <Button type="submit" variant="contained" sx={{ mt: 2 }}>
+            <span className="m-2 self-start text-xs font-inknut text-red">password is empty!</span>
+            <span className="m-2 self-start text-xs font-inknut text-red">Invalid email or password</span>
+            <span className="mt-4 mb-2 mx-2 self-start text-xs font-inknut">You don't have account? Register here!</span>
+            <Button type="submit" variant="contained" sx={{ mt: 2 }} >
                 Login
             </Button>
         </Box>
