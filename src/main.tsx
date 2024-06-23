@@ -10,12 +10,12 @@ import darkTheme from "./themes/darkTheme.ts";
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
       <ThemeProvider theme={darkTheme}>
-    <Router>
-      <Routes>
-        <Route path="/" Component={App} />
-        <Route path="/login" Component={Login} />
-      </Routes>
-    </Router>
+          <Router>
+            <Routes>
+                <Route path="/" Component={App} />
+                <Route path="/login" Component={Login} />
+            </Routes>
+          </Router>
       </ThemeProvider>
   </React.StrictMode>,
 )

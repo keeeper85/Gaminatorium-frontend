@@ -22,7 +22,7 @@ export default {
         'black': '#000000',
         'lightblack': '#0E1217',
         'red': '#70211C',
-        'gray': '#DDDDDD'
+        'gray': '#DDDDDD',
       },
     },
   },
