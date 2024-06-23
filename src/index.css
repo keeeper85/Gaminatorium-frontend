@@ -9,5 +9,5 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0E1217;
-  color: #FFFFFF;
+  color: theme('colors.gray');
 }
