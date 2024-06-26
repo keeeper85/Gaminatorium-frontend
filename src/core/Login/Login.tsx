@@ -16,7 +16,6 @@ function Login()  {
                     <h2 className="font-irish text-6xl text-center md:p-2 p-4 ">Login</h2>
                     </div>
                     <LoginForm />
-                    {/*{children}*/}
                 </div>
 
             </main>

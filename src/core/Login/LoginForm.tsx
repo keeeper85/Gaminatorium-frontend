@@ -1,6 +1,7 @@
-import {useState} from "react";
+import {FormEvent, useState} from "react";
 import {Box, Button, InputBase, Paper} from "@mui/material";
 import { z } from 'zod';
+import {NavLink, useNavigate} from "react-router-dom";
 
 const loginSchema = z.object({
     email: z.string().email({ message: "Invalid email format" }).nonempty({ message: "Email is required" }),
@@ -8,11 +9,12 @@ const loginSchema = z.object({
 });
 
 function LoginForm() {
+    let navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [errors, setErrors] = useState({ email: '', password: '' });
+    const [errors, setErrors] = useState({ email: '', password: '', validationBackendError: false });
 
-    const handleEmailCheck = (event:any) => {
+    const handleEmailCheck = (event: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement, Element>) => {
         event.preventDefault();
         const result = loginSchema.safeParse({
             email: username,
@@ -33,7 +35,7 @@ function LoginForm() {
             })
     }
 
-    const handlePasswordCheck = (event:any) => {
+    const handlePasswordCheck = (event: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement, Element>) => {
         event.preventDefault();
         const result = loginSchema.safeParse({
             email: username,
@@ -52,19 +54,25 @@ function LoginForm() {
 
         })
     }
-    const handleSubmit = async (event : any) => {
+    const handleSubmit = async (event :   FormEvent<HTMLFormElement>) => {
+        // event.preventDefault();
         console.log(event)
-        event.preventDefault();
-
         const result = loginSchema.safeParse({
             email: username,
             password: password
         });
-        console.log(result);
+        // TODO:
+        // send to backend and verify the user
         if(result.success) {
-                setErrors({ email: '', password: '' });
                 console.log("Form is valid: ", result.data);
-            return
+            //     add logic to login
+            navigate("/")
+        }
+        if(!result.success) {
+            setErrors( {
+                ...errors,
+                validationBackendError: true
+            })
         }
     };
 
@@ -89,14 +97,14 @@ function LoginForm() {
             >
                 <InputBase
                     sx={{ ml: 1, flex: 1 }}
-                    inputProps={{ 'aria-label': 'enter your username' }}
+                    inputProps={{ 'aria-label': 'enter your username', autoComplete: 'e-mail' }}
                     value={username}
-                    onChange={e =>
-                        setUsername(e.target.value)
+                    onChange={event =>
+                        setUsername(event.target.value)
 
 
                     }
-                    onBlur={e => handleEmailCheck(e) }
+                    onBlur={event => handleEmailCheck(event) }
                 />
             </Paper>
             <span className="m-2 self-start text-xs font-inknut text-red">{errors.email || '\u00A0'}</span>
@@ -109,21 +117,21 @@ function LoginForm() {
                 <InputBase
                     sx={{ ml: 1, flex: 1 }}
                     type="password"
-                    inputProps={{ 'aria-label': 'enter your password' }}
+                    inputProps={{ 'aria-label': 'enter your password', autoComplete: 'password' }}
                     value={password}
-                    onChange={e => {
-                        setPassword(e.target.value)
+                    onChange={event => {
+                        setPassword(event.target.value)
                     }}
-                    onBlur={e => handlePasswordCheck(e) }
+                    onBlur={event => handlePasswordCheck(event) }
                 />
             </Paper>
             <div className="m-2 text-xs font-inknut flex  justify-between w-full">
             <span className=" text-red">{errors.password || '\u00A0'}</span>
-            <span >Forgot your password?</span>
+                <NavLink to="/ForgotPassword" className=" text-darkSapphire hover:text-red"><span >Forgot your password?</span></NavLink>
 
             </div>
-            <span className="m-2 text-xs font-inknut text-red">Invalid email or password</span>
-            <span className="mt-4 mb-2 mx-2 self-start text-xs font-inknut">You don't have account? Register here!</span>
+            <span className="m-2 text-xs font-inknut text-red">{!errors.validationBackendError || 'Invalid email or password'}</span>
+            <span className="mt-4 mb-2 mx-2 self-start text-xs font-inknut">You don't have account? <NavLink to="/Register" className=" text-darkSapphire hover:text-red">Register here!</NavLink></span>
             <Button type="submit" variant="contained" sx={{m:2}} className="w-full font-inknut" >
                 Login
             </Button>

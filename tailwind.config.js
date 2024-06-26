@@ -23,6 +23,7 @@ export default {
         'lightblack': '#0E1217',
         'red': '#70211C',
         'gray': '#DDDDDD',
+        'darkSapphire': '#104747',
       },
     },
   },
