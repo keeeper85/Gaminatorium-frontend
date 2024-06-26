@@ -8,7 +8,7 @@ import { useAuth } from "../../hooks/useAuth";
 export default function Navbar() {
   const { isLogged } = useAuth();
   return (
-    <div className="flex justify-between items-center w-4/5 h-24 mt-5 px-5 bg-black rounded-2xl">
+    <div className="fixed z-10 flex justify-between items-center w-4/5 h-24 mt-5 px-5 bg-black rounded-2xl">
       <NavLink to="/" className="w-20 h-20">
         <img
           src="/assets/images/Gaminatorium_logo.jpg"
