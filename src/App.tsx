@@ -1,11 +1,10 @@
-import { NavLink } from "react-router-dom"
-import Layout from "./layout/Layout"
+import Layout from "./core/layout/Layout"
+import Hero from "./components/Hero/Hero"
 
 function App()  {
   return (
     <Layout>
-      <h1 className="text-red">TEST</h1>
-      <NavLink to="/asd">Test Link </NavLink>
+      <Hero />
     </Layout>
   )
 }

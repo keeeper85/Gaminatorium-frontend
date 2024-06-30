@@ -16,25 +16,24 @@ export default function Navbar() {
           alt="Gaminatorium logo"
         />
       </NavLink>
+            <div className="flex items-center gap-6">
+                {isLogged ?
+                    <NavLink to="/myAccount" className="flex items-center gap-2 cursor-pointer hover:text-red hover:scale-90 transition-all ease-in-out duration-300">
+                        <RiAccountCircleFill className="w-4 h-4" />
+                        <span className="text-base">Account</span>
+                    </NavLink>
+                    :
+                    <NavLink to="/login" className="flex items-center gap-2 cursor-pointer hover:text-red hover:scale-90 transition-all ease-in-out duration-300">
+                        <FaUser className="w-4 h-4" />
+                        <span className="text-base">Login</span>
+                    </NavLink>
+                }
 
-      <div className="flex items-center gap-6">
-        {isLogged ?
-          <NavLink to="/myAccount" className="flex items-center gap-2 cursor-pointer hover:text-red hover:scale-90 transition-all ease-in-out duration-300">
-            <RiAccountCircleFill className="w-10 h-10" />
-            <span className="text-2xl">Account</span>
-          </NavLink>
-          : 
-          <NavLink to="/login" className="flex items-center gap-2 cursor-pointer hover:text-red hover:scale-90 transition-all ease-in-out duration-300">
-            <FaUser className="w-8 h-8" />
-            <span className="text-2xl">Login</span>
-          </NavLink>
-        }
-
-        <NavLink to="/about" className="flex gap-2 cursor-pointer hover:text-red hover:scale-90 transition-all ease-in-out duration-300">
-          <BsInfoCircleFill className="w-8 h-8" />
-          <span className="text-2xl">About</span>
-        </NavLink>
-      </div>
-    </div>
-  )
+                <NavLink to="/about" className="flex items-center gap-2 cursor-pointer hover:text-red hover:scale-90 transition-all ease-in-out duration-300">
+                    <BsInfoCircleFill className="w-4 h-4" />
+                    <span className="text-base">About</span>
+                </NavLink>
+            </div>
+        </div>
+    )
 }
