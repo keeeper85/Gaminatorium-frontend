@@ -1,0 +1,20 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 43" width="128" height="43">
+	<title>Logo GAM</title>
+	<defs>
+		<image width="95" height="95" id="img1" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTUiIGhlaWdodD0iOTUiIHZpZXdCb3g9IjAgMCA5NSA5NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMjZDMCAxMS42NDA2IDExLjY0MDYgMCAyNiAwSDk1VjY5Qzk1IDgzLjM1OTQgODMuMzU5NCA5NSA2OSA5NUgwVjI2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTI1IDcyLjdINjlWNzlIMjVWNzIuN1pNNjIuNzE0MyAxNlYyNS40NUg1Ni40Mjg2VjE2SDUwLjE0MjlWMjUuNDVINDMuODU3MVYxNkgzNy41NzE0VjI1LjQ1SDMxLjI4NTdWMTZIMjVWMzQuOUgzMS4yODU3VjY2LjRINjIuNzE0M1YzNC45SDY5VjE2SDYyLjcxNDNaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K"/>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 6px;fill: #ffffff;font-weight: 400;font-family: "IrishGrover-Regular", "Irish Grover" } 
+		.t1 { font-size: 14px;fill: #fffefe;font-weight: 400;font-family: "IrishGrover-Regular", "Irish Grover" } 
+	</style>
+	<text id="Experiment. Learn. Play" style="transform: matrix(1,0,0,1,33,24)" >
+		<tspan x="16.2" y="4.2" class="t0">E</tspan><tspan  y="4.2" class="t0">x</tspan><tspan  y="4.2" class="t0">p</tspan><tspan  y="4.2" class="t0">e</tspan><tspan  y="4.2" class="t0">r</tspan><tspan  y="4.2" class="t0">i</tspan><tspan  y="4.2" class="t0">m</tspan><tspan  y="4.2" class="t0">e</tspan><tspan  y="4.2" class="t0">n</tspan><tspan  y="4.2" class="t0">t</tspan><tspan  y="4.2" class="t0">.</tspan><tspan  y="4.2" class="t0"> </tspan><tspan  y="4.2" class="t0">L</tspan><tspan  y="4.2" class="t0">e</tspan><tspan  y="4.2" class="t0">a</tspan><tspan  y="4.2" class="t0">r</tspan><tspan  y="4.2" class="t0">n</tspan><tspan  y="4.2" class="t0">.</tspan><tspan  y="4.2" class="t0"> </tspan><tspan  y="4.2" class="t0">P</tspan><tspan  y="4.2" class="t0">l</tspan><tspan  y="4.2" class="t0">a</tspan><tspan  y="4.2" class="t0">y
+</tspan>
+	</text>
+	<text id="Gaminatorium" style="transform: matrix(1,0,0,1,35,12)" >
+		<tspan x="0" y="10.5" class="t1">G</tspan><tspan  y="10.5" class="t1">a</tspan><tspan  y="10.5" class="t1">m</tspan><tspan  y="10.5" class="t1">i</tspan><tspan  y="10.5" class="t1">n</tspan><tspan  y="10.5" class="t1">a</tspan><tspan  y="10.5" class="t1">t</tspan><tspan  y="10.5" class="t1">o</tspan><tspan  y="10.5" class="t1">r</tspan><tspan  y="10.5" class="t1">i</tspan><tspan  y="10.5" class="t1">u</tspan><tspan  y="10.5" class="t1">m
+</tspan>
+	</text>
+	<use id="Logo_icon" href="#img1" transform="matrix(.274,0,0,.274,3,9)"/>
+</svg>
