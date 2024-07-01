@@ -1,0 +1,28 @@
+@tailwind components;
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    max-height: 30vh;
+    margin: 0 auto;
+    
+}
+
+.copyright {
+    justify-content: center;
+    padding: 1rem;
+}
+
+.social-icons {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: baseline;
+
+}
+
+.follow-us {
+    display: -moz-grid-line;
+}
