@@ -5,7 +5,7 @@ interface ModalProps {
 export function Modal({ onClose }: ModalProps) {
 	return (
 		<section className='fixed flex items-center justify-center w-full h-full top-0' onClick={onClose}>
-			<div className='w-[86%] p-8 rounded-2xl bg-black w-full max-w-[560px] shadow-dark mt-28 lg:p-16' 
+			<div className='w-[86%] p-8 rounded-2xl bg-black w-full max-w-[560px] shadow-dark mt-28 mx-7 lg:p-16' 
                     onClick={e => e.stopPropagation()}>
 				<h1 className='font-irish text-center text-4xl mb-4 lg:text-6xl lg:mb-14 tracking-tight'>Forgot Password</h1>
 
