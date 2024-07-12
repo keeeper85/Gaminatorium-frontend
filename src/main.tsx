@@ -6,6 +6,7 @@ import './index.css'
 import Login from "./core/Login/Login.tsx";
 import { ThemeProvider } from '@mui/material';
 import darkTheme from "./themes/darkTheme.ts";
+import Register from "./core/Register/Register.tsx";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             <Routes>
                 <Route path="/" Component={App} />
                 <Route path="/login" Component={Login} />
+                <Route path="/register" Component={Register} />
             </Routes>
           </Router>
       </ThemeProvider>
