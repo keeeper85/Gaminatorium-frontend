@@ -6,7 +6,7 @@ import './index.css'
 import Login from './core/Login/Login.tsx'
 import { ThemeProvider } from '@mui/material'
 import darkTheme from './themes/darkTheme.ts'
-import NotFound from './components/NotFound/NotFound.tsx'
+import Page404 from './components/Page404/Page404.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 				<Routes>
 					<Route path='/' Component={App} />
 					<Route path='/login' Component={Login} />
-					<Route path='*' Component={NotFound} />
+					<Route path='*' Component={Page404} />
 				</Routes>
 			</Router>
 		</ThemeProvider>
