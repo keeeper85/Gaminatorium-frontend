@@ -6,6 +6,7 @@ import Page404 from './core/Page404/Page404.tsx'
 import About from './core/About/About.tsx'
 import Register from './core/Register/Register.tsx'
 import ChangePassword from './core/ChangePassword/ChangePassword.tsx'
+import ForgotPassword from './core/ForgotPassword/ForgotPassword.tsx'
 
 export default function App() {
 	return (
@@ -15,6 +16,7 @@ export default function App() {
 				<Route path='/login' element={<Login />} />
 				<Route path='/register' element={<Register />} />
 				<Route path='/change-password' element={<ChangePassword />} />
+				<Route path='/forgot-password' element={<ForgotPassword/>} />
 				<Route path='/about' element={<About />} />
 			</Route>
 
