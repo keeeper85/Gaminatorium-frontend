@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import Login from './core/Login/Login.tsx'
 import Page404 from './core/Page404/Page404.tsx'
 import About from './core/About/About.tsx'
+import Register from './core/Register/Register.tsx'
 
 export default function App() {
 	return (
@@ -11,6 +12,7 @@ export default function App() {
 			<Route element={<Layout />}>
 				<Route path='/' element={<Hero />} />
 				<Route path='/login' element={<Login />} />
+				<Route path='/register' element={<Register />} />
 				<Route path='/about' element={<About />} />
 			</Route>
 
