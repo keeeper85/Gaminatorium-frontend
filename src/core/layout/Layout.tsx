@@ -1,12 +1,10 @@
 import { AuthProvider } from '../../contexts/Authcontext.tsx'
 import Navbar from '../../components/Navbar/Navbar.tsx'
 import Footer from '../../components/Footer/Footer.tsx'
+import { Outlet } from 'react-router-dom'
 
-interface LayoutProps {
-	children: JSX.Element[] | JSX.Element
-}
 
-function Layout({ children }: LayoutProps) {
+function Layout() {
 	return (
 		<AuthProvider>
 			<div className='flex flex-col min-h-screen'>
@@ -14,7 +12,7 @@ function Layout({ children }: LayoutProps) {
 					<Navbar />
 				</header>
 
-				<main className='flex flex-col justify-center items-center'>{children}</main>
+				<main className='flex flex-col justify-center items-center'><Outlet /></main>
 
 				<Footer />
 			</div>
