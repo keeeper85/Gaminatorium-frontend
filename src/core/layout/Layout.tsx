@@ -12,7 +12,7 @@ function Layout() {
 					<Navbar />
 				</header>
 
-				<main className='flex flex-col justify-center items-center'><Outlet /></main>
+				<main className='flex flex-col justify-center items-center p-4'><Outlet /></main>
 
 				<Footer />
 			</div>
