@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="flex flex-col md:flex-row gap-12 mt-36 items-center">
+    <div className="flex flex-col md:flex-row gap-12 mt-36 items-center lg:gap-24">
       <div className="flex flex-col text-center gap-4">
         <h1 className="flex flex-col font-irish xl:text-6xl text-4xl font-bold">
           Welcome to <strong className="text-red">Gaminatorium</strong>

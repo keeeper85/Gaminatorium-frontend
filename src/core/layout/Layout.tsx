@@ -4,7 +4,7 @@ import Footer from '../../components/Footer/Footer.tsx'
 import { Outlet } from 'react-router-dom'
 
 
-function Layout() {
+function Layout({ children }: any) {
 	return (
 		<AuthProvider>
 			<div className='flex flex-col min-h-screen'>
@@ -12,7 +12,7 @@ function Layout() {
 					<Navbar />
 				</header>
 
-				<main className='flex flex-col justify-center items-center p-4'><Outlet /></main>
+				<main className='flex flex-col justify-center items-center p-4'><Outlet /> {children}</main>
 
 				<Footer />
 			</div>
