@@ -13,11 +13,11 @@ export default function DescriptionAlerts() {
         Are you sure you want to ban this user?
 
       </Alert>
-      <Button variant="contained" size="small">
-          Yes
+      <Button className='btn' variant="contained" size="small">
+          <span className='btn-text'>Yes</span>
         </Button>
-        <Button variant="contained" size="small">
-          No
+        <Button className='btn' variant="contained" size="small">
+          <span className='btn-text'>No</span>
         </Button>
     </Stack>
     </div>

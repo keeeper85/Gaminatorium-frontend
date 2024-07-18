@@ -23,3 +23,17 @@ body {
   bottom: 0;
   right: 0;
 }
+
+.btn {
+  background-color: #70211C;
+  border-radius: 15px;
+}
+
+.btn-text {
+  color: white;
+}
+
+.btn:hover {
+  border: 2px solid #70211C;
+  color: black;
+}
