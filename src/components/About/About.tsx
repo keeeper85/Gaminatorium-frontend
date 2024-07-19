@@ -1,3 +1,5 @@
+import { Line } from "../Line/Line";
+
 export default function About() {
 	return (
 		<main className='mt-32 max-w-screen-xl p-4 mx-auto'>
@@ -15,7 +17,7 @@ export default function About() {
 			</section>
 
 			<section className='my-8 font-inknut text-gray text-xs leading-8 px-4'>
-				<div className='h-[1px] w-[80%] bg-[#DDD] mx-auto'></div>
+				<Line />
 
 				<div className='pt-8 flex gap-12 flex-wrap justify-center lg:flex-nowrap'>
 					<img src='/assets/images/man.png' className='w-full max-w-[280px] object-cover' alt='Image man' />
@@ -35,7 +37,7 @@ export default function About() {
 			</section>
 
 			<section className='my-8 font-inknut text-gray text-xs leading-8 px-4'>
-				<div className='h-[1px] w-[80%] bg-[#DDD] mx-auto'></div>
+				<Line />
 
 				<div className='pt-8 flex gap-12 flex-wrap justify-center lg:flex-nowrap'>
 					<img src='/assets/images/man.png' className='lg:order-1 w-full max-w-[280px] object-cover' alt='Image man' />
@@ -55,7 +57,7 @@ export default function About() {
 			</section>
 
 			<section className='my-8 font-inknut text-gray text-xs leading-8 px-4'>
-				<div className='h-[1px] w-[80%] bg-[#DDD] mx-auto'></div>
+				<Line />
 
 				<div className='py-8 flex gap-12 flex-wrap justify-center lg:flex-nowrap'>
 					<img src='/assets/images/man.png' className='w-full max-w-[280px] object-cover' alt='Image man' />
@@ -72,7 +74,6 @@ export default function About() {
 						</p>
 					</div>
 				</div>
-				<div className='h-[1px] w-[80%] bg-[#DDD] mx-auto'></div>
 			</section>
 		</main>
 	)
