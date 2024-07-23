@@ -33,7 +33,7 @@ export const ActiveSlider: React.FC<SwiperContainerProps> = ({itemsData}) => {
         grabCursor={true}
         freeMode={true}
         scrollbar={{ draggable: true }}
-        className='flex items-center justify-center h-36'
+        className='flex items-center justify-center '
       >
       {items && items.map((item, index) => (
         <SwiperSlide key={index}>

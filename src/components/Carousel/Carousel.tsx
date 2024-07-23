@@ -3,27 +3,27 @@ import { ActiveSlider } from "./ActiveSlider";
 const itemsData = [
   {
     title: 'fff',
-    description: 'asdasdsa',
+    description: 'https://www.pcgamesn.com/wp-content/sites/pcgamesn/2021/02/doom-eternal-music-hell-hades-bpm-550x309.jpg',
   },
   {
     title: 'sss',
-    description: 'cc',
+    description: 'https://www.pcgamesn.com/wp-content/sites/pcgamesn/2021/02/doom-eternal-music-hell-hades-bpm-550x309.jpg',
   },
   {
     title: 'jhjj',
-    description: 'ghgfhfg',
+    description: 'https://www.pcgamesn.com/wp-content/sites/pcgamesn/2021/02/doom-eternal-music-hell-hades-bpm-550x309.jpg',
   },
   {
     title: 'llll',
-    description: 'cljk;ljkc',
+    description: 'https://www.pcgamesn.com/wp-content/sites/pcgamesn/2021/02/doom-eternal-music-hell-hades-bpm-550x309.jpg',
   },
   {
     title: 'iii',
-    description: 'cljk;d',
+    description: 'https://www.pcgamesn.com/wp-content/sites/pcgamesn/2021/02/doom-eternal-music-hell-hades-bpm-550x309.jpg',
   },
   {
     title: 'uuuu',
-    description: 'cljk;ljkc',
+    description: 'https://www.pcgamesn.com/wp-content/sites/pcgamesn/2021/02/doom-eternal-music-hell-hades-bpm-550x309.jpg',
   },
 ]
 
