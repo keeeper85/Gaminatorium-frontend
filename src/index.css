@@ -12,21 +12,10 @@ body {
   color: #FFFFFF;
 }
 
-.box {
-  width: 720px ;
-  height:  790px;
-  top: 0;
-  left: 0;
-  position: absolute;
-  align-items: center;
-  
-}
-
 .btn {
-  width: 223px ;
-  height: 33px;
-  justify-content: center;
-  position: relative;
+  color: #70211c;
 }
 
-
+.container {
+  color: #B9B9B9;
+}
